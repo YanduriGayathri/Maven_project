@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.screenshot.Itest_Listner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.screenshot.Capture_Screenshot">
+        <methods>
+          <include name="GitHUB"/>
+          <include name="Tear_Down"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.screenshot.Capture_Screenshot -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="ListenersTest3(failed)">
+    <classes>
+      <class name="com.screenshot.Capture_Screenshot">
+        <methods>
+          <include name="Tear_Down"/>
+          <include name="Reddit"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.screenshot.Capture_Screenshot -->
+    </classes>
+  </test> <!-- ListenersTest3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

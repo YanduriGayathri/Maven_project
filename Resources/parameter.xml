@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+	  <parameter name="BrowserName" value="Chrome"/>
+	
+	<parameter name="url" value=" https://www.facebook.com/login/ "/>
+	<parameter name="username"  value="youngstoner451@gmail.com "/>
+	<parameter name="password" value="sree@1234"/>
+		<classes>
+			<class name="com.parameter.Browser_Para"/>
+		</classes>
+</test>
+<test name="Openapp">
+	
+	<parameter name="BrowserName" value="Edge"/>
+	<parameter name="url" value=" https://www.facebook.com/login/ "/>
+	<parameter name="username"  value="youngstoner451@gmail.com "/>
+	<parameter name="password" value="sree@1234"/>
+		<classes>
+			<class name="com.parameter.Browser_Para"/>
+		</classes>
+		
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
